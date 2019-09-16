@@ -1,0 +1,32 @@
+  <mat-sidenav-container fullscreen>
+    <mat-sidenav [(opened)]="opened" mode="side" position="start">
+        
+        <div class="logo">
+        </div>
+        <div class="dashboard-list">      
+            <mat-list class="navbar-list" role="list" >
+                   <a mat-list-item (click)="set(0)" class="crumb" style="background-color:rgb(247, 248, 157); border:1px solid;" >CRUMB</a>
+                   <a mat-list-item (click)="set(1)" class="solutionb" style="background-color:white; border:1px solid;">SOLUTIONB</a>
+                   <a mat-list-item (click)="set(2)" class="modul" style="background-color:white;border:1px solid;">MODULER</a>
+                   <a mat-list-item  (click)="openModel()" class="colortype" style="background-color:white;border:1px solid;">COLOR MASTER<mat-icon class="mat-icon notranslate material-icons mat-icon-no-color" role="img" aria-hidden="true">keyboard_arrow_down</mat-icon></a>
+                   <a mat-list-item  *ngIf=show (click)="set(3)" style="background-color:white;border:1px solid;" >Color Name</a>
+                   <a mat-list-item  *ngIf=show (click)="set(4)" style="background-color:white;border:1px solid;">Color Code</a>
+                   <a mat-list-item (click)="set(5)" class="production" style="background-color:white;border:1px solid;">PRODUCTION</a>
+                   <a mat-list-item (click)="set(6)" class="payroll" style="background-color:white;border:1px solid;">PAYROLL</a>
+               </mat-list>
+            </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar style="background: linear-gradient(to bottom, #663300 0%, #996633 100%); ">
+            <button mat-icon-button (click)="opened=!opened">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <!-- <h1 style="margin-left:35px;font-size:30px">ADIFLEX TILES</h1> -->
+            <button class="logout-btn" onclick="window.location.href = 'http://localhost:4200/';">Logout</button>
+            
+        </mat-toolbar >
+        <div>
+                <router-outlet></router-outlet>
+            </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+  }
+  th,.ADDbtn{
+    background: linear-gradient(to bottom, #b87e45 0%, #996633 100%); 
+    font-size: 18px;
+   
+ }

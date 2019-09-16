@@ -1,0 +1,33 @@
+.mat-drawer{ background: linear-gradient(to bottom, #663300 0%, #996633 100%); }
+mat-sidenav ,.list{width:318px; padding:16px;}
+.main-content{ padding:16px;}
+/* mat-sidenav-container
+ {
+     height:100%;
+     position: fixed;
+ }   */
+.navbar,.mat-nav-list
+{
+    justify-content: space-between;
+    width:50%;
+
+}
+
+.a{
+background-color:white;
+}
+.spandiv
+{
+    float: right;
+}
+.logout-btn
+{
+    margin-left:90%; 
+}
+
+.logo{
+    background-image: url(src\assets\logo1.jpg);
+    height: 228px;
+    background-repeat: no-repeat;
+
+}
